@@ -1,0 +1,166 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../assets/fonts/Roboto-Regular.ttf');
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h3 {
+    color:#16235a;
+    font-weight: bolder;
+    margin: 10;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: flex-start;
+    height: 100vh;
+}
+
+.pane {  
+    flex-basis: 25%;
+    /* change */
+    width: 25%;    
+    /* change */         
+    background-color: #ebf2ea;
+    overflow: scroll;
+}
+
+.main {
+    flex-basis: 75%;
+    /* change */
+    width: 75%;
+    /* change */
+    background-color: #0abda0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#newList { 
+    padding: 2px;
+    width: 100%;
+    border-radius: 0;
+}
+
+#paneButtons {
+    display: flex;
+    width: 100%; 
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.paneItems {
+    flex-basis: 90%; 
+    /* change */
+    width: 90%;
+    text-decoration: underline;
+    word-wrap: break-word;
+    border-radius: 0%;
+}
+
+.paneDelete {
+    flex-basis: 10%;
+    /* change */
+    width: 10%;
+    border-radius: 0%;
+    padding: 0;
+
+}
+
+.inputDiv {
+    flex-basis: 5%;
+    display: flex;
+    width: 70%;
+    margin: 10px auto;
+}
+
+.inputTask {
+    flex-basis: 90%;;
+    display: initial;
+}
+
+#add {
+    flex-basis: 10%;
+    padding: 3px;
+}
+
+.listDiv {
+    width: 70%;
+    margin: auto;
+    flex-basis: 95%;
+    height: 100vh;
+}
+
+.myList {
+    /* width: 70%;  */
+    margin: auto;
+    padding: 0;
+    list-style-type: none;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    background-color: rgb(247, 241, 189);
+    max-height: 90%;
+    overflow-y: scroll;
+}
+
+.listItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 16px 21px 8px;
+    margin: 0;
+    word-wrap: break-word;
+}
+
+.check{
+    margin-right: 7px;
+}
+
+.itemText {
+    flex-basis: 90%;
+    /* change */
+    width: 90%;
+    /* change */
+    padding: 0;
+    margin: 0;
+    background-color: inherit;
+    resize: none;
+    border: none;
+    outline: none;
+}
+
+.editText {
+    flex-basis: 80%;
+    /* change */
+    width: 80%;
+    /* change */
+    margin: 0;
+    resize: none;
+    background-color: rgb(248, 245, 214);
+}
+
+#delete {
+    /* flex-basis: 5%; */
+    float: right;
+    padding: 0;
+    border:none;
+    background-color: rgb(247, 241, 189);
+    
+}
+
+.strike {
+    text-decoration: line-through;
+}
+
+.currentList {
+    background-color: #343a40;
+}
+
+.selected {
+    background-color: black;
+    color: white;
+}
